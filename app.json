@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "HelloWorld",
-    "slug": "expo-template-default",
+    "name": "FarmtexHub",
+    "slug": "farmtexhub",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -13,13 +13,15 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.senseikaihorg.farmtexhub"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.senseikaihorg.farmtexhub"
     },
     "web": {
       "bundler": "metro",
@@ -31,6 +33,18 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "6e929b57-553b-40fa-8f92-ae299b0a2c6c"
+      }
+    },
+    "owner": "senseikaih-org",
+    "updates": {
+      "url": "https://u.expo.dev/6e929b57-553b-40fa-8f92-ae299b0a2c6c"
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
     }
   }
 }
