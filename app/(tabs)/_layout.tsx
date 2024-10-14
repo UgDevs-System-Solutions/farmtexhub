@@ -17,7 +17,7 @@ export default function TabLayout() {
       }}
     >
       <Tabs.Screen
-        name="index"
+        name="home"
         options={{
           title: 'Home',
           tabBarIcon: ({ color, focused }) => (
@@ -25,7 +25,7 @@ export default function TabLayout() {
               name={focused ? 'home-sharp' : 'home-outline'} 
               color={color} 
               size={24} 
-              accessibilityLabel="Home" // {{ edit_1 }}
+              accessibilityLabel="Home"
             />
           ),
         }}
@@ -39,7 +39,35 @@ export default function TabLayout() {
               name={focused ? 'information-circle' : 'information-circle-outline'} 
               color={color} 
               size={24} 
-              accessibilityLabel="About" // {{ edit_2 }}
+              accessibilityLabel="About"
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="chat"
+        options={{
+          title: 'Chat',
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons 
+              name={focused ? 'chatbubbles' : 'chatbubbles-outline'} 
+              color={color} 
+              size={24} 
+              accessibilityLabel="Chat"
+            />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="settings"
+        options={{
+          title: 'Settings',
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons 
+              name={focused ? 'settings' : 'settings-outline'} 
+              color={color} 
+              size={24} 
+              accessibilityLabel="Settings"
             />
           ),
         }}

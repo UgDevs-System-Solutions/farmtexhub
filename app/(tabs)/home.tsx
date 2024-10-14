@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
   // Container style with flex, background color, alignment, and justification
   container: {
     flex: 1,//Allows the container to take up the full height and width of the screen
-    backgroundColor: 'black',//Background color of the container
+    backgroundColor: '#25292e',//Background color of the container
     alignItems: 'center',//Centers items horizontally
     justifyContent: 'space-around',//Distributes items evenly with space between them
     flexDirection: 'column',//Ensures the container has 2 rows
