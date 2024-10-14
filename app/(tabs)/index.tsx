@@ -6,9 +6,9 @@ import { Text, View, StyleSheet } from "react-native";
 export default function Index() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>FarmtexHub-Home</Text>
+      <Text style={styles.text}>FarmtexHub Home</Text>
       <Link href="/about" style={styles.button}>
-        Go to About screen
+        Get Started
       </Link>
     </View>
   );
@@ -20,17 +20,24 @@ const styles = StyleSheet.create({
   // Container style with flex, background color, alignment, and justification
   container: {
     flex: 1,//Allows the container to take up the full height and width of the screen
-    backgroundColor: '#25292e',//Background color of the container
+    backgroundColor: 'black',//Background color of the container
     alignItems: 'center',//Centers items horizontally
-    justifyContent: 'center',//Centers items vertically
+    justifyContent: 'space-around',//Distributes items evenly with space between them
+    flexDirection: 'column',//Ensures the container has 2 rows
   },
   // Text style with white color
   text: {
+    fontSize: 24,
+    fontWeight: 'bold',
     color: '#ffffff',
   },
   button: {
-    color: 'white',
-    textDecorationLine: 'underline',
-    textDecorationColor: 'red',
+    color: 'black',
+    backgroundColor: 'white',
+    padding: 10,
+    borderRadius: 5,
+    marginTop: 20,
+    fontSize: 18,
+    fontWeight: 'semibold',
   },
 });
